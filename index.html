@@ -7,62 +7,101 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            color: #333;
+            background-color: #f6f6f6;
+            color: #202122;
         }
-
-        header, article, footer {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
+        header, footer, nav, main {
+            display: block;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a2a9b1;
+        }
+        main {
+            display: flex;
+            justify-content: start;
+        }
+        nav {
+            width: 200px;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: #f8f9fa;
+            border-right: 1px solid #a2a9b1;
         }
-
-        header img {
-            width: 100%;
-            max-width: 200px;
-            margin: 10px 0;
+        article {
+            flex-grow: 1;
+            padding: 20px;
+            background: #fff;
+            margin: 10px;
         }
-
         h1, h2 {
-            color: #333;
+            color: #202122;
         }
-
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 8px 0;
+        }
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         footer {
+            background-color: #ffffff;
             text-align: center;
-            font-size: 0.8em;
+            padding: 12px 20px;
+            border-top: 1px solid #a2a9b1;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Jacob Starr</h1>
-        <p>An Unofficial Biography</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Shakespeare.jpg" alt="Historical figure resembling Jacob Starr">
+        <h1>Jacob Starr: An Unofficial Biography</h1>
     </header>
-    <article>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>Jacob Starr, known at university for his vehement critiques and notorious coffee consumption, has become a legend in his own right. Often spotted debating shadows, Jacob's adventures through academia are nothing short of epic.</p>
-        </section>
-        <section id="political-theory">
-            <h2>Critique of Foucault and Political Theory</h2>
-            <p>Jacob once attempted to debunk Foucault's entire political theory in a single lecture, armed with nothing but a whiteboard marker and sheer confidence. His arguments were so circular, they were later used as a case study in a geometry class.</p>
-        </section>
-        <section id="coffee-obsession">
-            <h2>Coffee Obsession</h2>
-            <p>Not merely a drink, but a way of life. Jacob’s blood type is Espresso, ristretto, precisely. Legend has it that his espresso machine is listed as his emergency contact.</p>
-        </section>
-        <section id="midnight-debates">
-            <h2>Midnight Debates</h2>
-            <p>Known for his midnight debates, Jacob once convinced a group of philosophy majors that reality is just a poorly moderated subreddit. The debate lasted until sunrise and was fueled by, you guessed it, copious amounts of coffee.</p>
-        </section>
-    </article>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#political-theory">Political Theory</a></li>
+                <li><a href="#coffee-obsession">Coffee Obsession</a></li>
+                <li><a href="#midnight-debates">Midnight Debates</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>Jacob Starr, known at university for his vehement critiques and notorious coffee consumption, has become a legend in his own right. Often spotted debating shadows, Jacob's adventures through academia are nothing short of epic.</p>
+            </section>
+            <section id="political-theory">
+                <h2>Political Theory</h2>
+                <p>Jacob once attempted to debunk Foucault's entire political theory in a single lecture, armed with nothing but a whiteboard marker and sheer confidence. His arguments were so circular, they were later used as a case study in a geometry class.</p>
+            </section>
+            <section id="coffee-obsession">
+                <h2>Coffee Obsession</h2>
+                <p>Not merely a drink, but a way of life. Jacob’s blood type is Espresso, ristretto, precisely. Legend has it that his espresso machine is listed as his emergency contact.</p>
+            </section>
+            <section id="midnight-debates">
+                <h2>Midnight Debates</h2>
+                <p>Known for his midnight debates, Jacob once convinced a group of philosophy majors that reality is just a poorly moderated subreddit. The debate lasted until sunrise and was fueled by, you guessed it, copious amounts of coffee.</p>
+            </section>
+        </article>
+    </main>
     <footer>
         <p>Content is fictional and meant for satirical purposes only.</p>
     </footer>
